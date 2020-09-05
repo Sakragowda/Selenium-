@@ -11,6 +11,7 @@ public class DemoLaunch {
       WebDriver driver = new ChromeDriver();
       driver.get("https://www.facebook.com/");
       driver.close();
+      System.out.println("web is launching Succesfully");
 	}
 
 }
