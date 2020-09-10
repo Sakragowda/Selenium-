@@ -17,6 +17,7 @@ public class naukriJOB {
      System.out.println(parenthandel);
      @SuppressWarnings("unused")
 	 Set<String> Windowhandels = driver.getWindowHandles();
+     
      Windowhandels.remove(parenthandel);
      for (String wind : Windowhandels) {
     	 System.out.println(wind);
