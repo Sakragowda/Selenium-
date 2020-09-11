@@ -1,9 +1,11 @@
 package org.qsp.Selenium;
 
+import java.util.ArrayList;
 import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 
 public class naukariRevers {
    public static void main(String[] args) {
@@ -16,13 +18,14 @@ public class naukariRevers {
 		 String parenthandel = driver.getWindowHandle();
 	     System.out.println(parenthandel);
 	     @SuppressWarnings("unused")
-		 Set<String> Windowhandels = driver.getWindowHandles();
-	     ArayyList<String> 
-	     Windowhandels.remove(parenthandel);
-	     for (String wind : Windowhandels) {
-	    	 System.out.println(wind);
-	    	 driver.switchTo().window(wind);
+		 Set<String> allWindowhandels = driver.getWindowHandles();
+	     ArrayList<String> arr = new ArrayList<String>(allWindowhandels);
+	     for (int i =arr.size() - 1 ; i >= 0 ; i--) {
+	    	 System.out.println(arr.get(i));
+	    	 driver.switchTo().window(arr.get(i));
 	    	 driver.close();
-	     }	   
-}
+	     
+	     }
+	    	  
+   }
 }
