@@ -18,10 +18,11 @@ public class facebookELE {
 	      Thread.sleep(200);		
 	      WebElement userName = driver.findElement(By.id("email"));
 	      userName.sendKeys("sakra3196@gmail.com"); 	
-	     // WebElement Password = driver.findElement(By.id("pass"));
-	      driver.findElement(By.id("pass")).sendKeys("sakra",Keys.ENTER);
-	    //  WebElement Login = driver.findElement(By.name("login"));
-	   //   Login.click();
+	      //WebElement Password = driver.findElement(By.id("pass"));
+	      //driver.findElement(By.id("pass")).sendKeys("sakra",Keys.ENTER);
+	      //WebElement Login = driver.findElement(By.name("login"));
+	      //Login.click();
+	      driver.findElement(By.id("pass"));
 	      	      
 	}
 
