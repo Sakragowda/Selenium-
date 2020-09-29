@@ -21,8 +21,7 @@ public class actiTIME {
 	      for (String tab : tabs) {
 	    	  driver.switchTo().window(tab);
 	      }
-	      @SuppressWarnings("unused")
-		  String titele = driver.getTitle();
+	      String titele = driver.getTitle();
 	      driver.close();
 	      System.out.println(titele);
 	     

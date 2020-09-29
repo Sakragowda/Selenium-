@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class UrbenLaderXP {
 
@@ -20,13 +21,23 @@ public class UrbenLaderXP {
 	      driver.findElement(By.xpath("//a[@class='close-reveal-modal hide-mobile']")).click();
 	      Thread.sleep(2000);
 	      List<WebElement> menus = driver.findElements(By.xpath("//ul[@class='topnav bodytext']/li"));
-	      //Actions a = new Actions(driver);
-	      for (WebElement mene : menus)
+	      Actions a = new Actions(driver);
+	      for (WebElement menu : menus)
 	      {
-			System.out.println(mene.getText());
+			String name = menu.getText();
+			System.err.println(name);
+			a.moveToElement(menu).build().perform();
+			Thread.sleep(500);
+			 List<WebElement> subMenus = driver.findElements(By.xpath("//span[contains(.,'"+name+"')]/parent::li/descendant::ul[@class='taxonslist']/li"));
+			 for (WebElement subMenuName : subMenus) {
+				 System.out.println(subMenuName.getText());
+			 }
+				
+			}
+			 
 		  }
 	      
 
-	}
+	
 
 }
