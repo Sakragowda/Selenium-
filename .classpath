@@ -10,6 +10,7 @@
 	<classpathentry kind="src" path="X-path"/>
 	<classpathentry kind="src" path="RoboClass"/>
 	<classpathentry kind="src" path="ActionsClass"/>
+	<classpathentry kind="src" path="AnonymousCLASS"/>
 	<classpathentry kind="lib" path="jar/selenium-server-standalone-3.141.59.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
