@@ -22,7 +22,9 @@ public class FlipakrTiPHONE {
 		  driver.findElement(By.xpath("//div[@class='col col-7-12']/descendant::div[text()='Apple iPhone SE (Black, 64 GB)']")).click(); // click on FIRST i phone product
 		  Thread.sleep(3000);
 		  Set<String> tabs = driver.getWindowHandles() ;
-	      for (String tab : tabs ) {  // Switch tab to another tab
+	      for (String tab : tabs ) 
+	      {  
+	    	  // Switch tab to another tab
 	    	  driver.switchTo().window(tab);
 	      }
 	      driver.findElement(By.xpath("//button[@class='_2AkmmA _2Npkh4 _2MWPVK']")).click();

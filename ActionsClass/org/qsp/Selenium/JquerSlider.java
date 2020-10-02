@@ -6,10 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class JquerySLIDER {
+public class JquerSlider {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+
 	      System.setProperty("webdriver.chrome.driver",".\\software\\chromedriver.exe" );
 	      WebDriver driver = new ChromeDriver();
 	      driver.manage().window().maximize();        // Maximise the windo 
@@ -21,7 +22,8 @@ public class JquerySLIDER {
 	      
 		  Actions a = new Actions(driver);
 		  WebElement slider = driver.findElement(By.id("slider"));    //    SLIDER
-		  a.dragAndDropBy(slider, 100 , 100 ).perform();  
+		  a.dragAndDropBy(slider, 100 , 100 ).perform(); 		
+		
 	}
 
 }

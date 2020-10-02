@@ -6,28 +6,24 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class JqueryDroppable {
+public class JueryDRAGGABLE {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+
 	      System.setProperty("webdriver.chrome.driver",".\\software\\chromedriver.exe" );
 	      WebDriver driver = new ChromeDriver();
 	      driver.manage().window().maximize();        // Maximise the windo 
 	      
-	      driver.get("https://jqueryui.com/droppable/");   // DROPPABLE URL
+	      driver.get("https://jqueryui.com/draggable/");      // DRAGGABLE
 	      
 	      WebElement frame = driver.findElement(By.xpath("//iframe[@class='demo-frame']"));
 	      driver.switchTo().frame(frame);
 	      
-	      Actions a = new Actions(driver);
-	      WebElement drop = driver.findElement(By.id("draggable"));
-	      Thread.sleep(2000);
-	      WebElement dropPlace = driver.findElement(By.id("droppable"));
-	    //  WebElement tl = driver.findElement(By.xpath("//div[@style='position: relative; left: 159px; top: 50px']"));
-	      a.dragAndDrop(drop, dropPlace).perform();
-	      Thread.sleep(2000);
-	      System.out.println(dropPlace.getText());
-	      
+		  Actions a = new Actions(driver);
+		  WebElement slider = driver.findElement(By.id("draggable"));   // DRAGGABLE
+		  a.dragAndDropBy(slider, 200 , 0 ).perform();		
+		
 	}
 
 }

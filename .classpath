@@ -8,6 +8,8 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="webElement"/>
 	<classpathentry kind="src" path="X-path"/>
+	<classpathentry kind="src" path="RoboClass"/>
+	<classpathentry kind="src" path="ActionsClass"/>
 	<classpathentry kind="lib" path="jar/selenium-server-standalone-3.141.59.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

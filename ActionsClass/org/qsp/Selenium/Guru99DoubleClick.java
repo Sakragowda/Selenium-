@@ -10,6 +10,7 @@ public class Guru99DoubleClick {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
+
 	      System.setProperty("webdriver.chrome.driver",".\\software\\chromedriver.exe" );
 	      WebDriver driver = new ChromeDriver();
 	      driver.manage().window().maximize();        // Maximise the window
@@ -19,8 +20,8 @@ public class Guru99DoubleClick {
 	      Actions a = new Actions(driver);
 	      //a.contextClick(rClick).perform();
 	      WebElement dClick = driver.findElement(By.tagName("button"));
-	      a.doubleClick(dClick).perform();
-	      
+	      a.doubleClick(dClick).perform();		
+		
 	}
 
 }

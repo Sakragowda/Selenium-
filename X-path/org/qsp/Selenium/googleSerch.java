@@ -19,10 +19,11 @@ public class googleSerch {
 	      driver.findElement(By.name("q")).sendKeys("java");
 	       List<WebElement> sugg = driver.findElements(By.xpath("//ul[@class=\"erkvQe\"]/li"));
 	       Thread.sleep(2000);
-	       for (WebElement sug : sugg) {
+	       for (WebElement sug : sugg) 
+	        {
 	    	System.out.println(sug.getText());
-		}
-	       sugg.get(3).click();
+		    }
+	        sugg.get(3).click();
 	}
 
 }

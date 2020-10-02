@@ -9,11 +9,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class RigthClick {
+public class RightClick {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-
 	      System.setProperty("webdriver.chrome.driver",".\\software\\chromedriver.exe" );
 	      WebDriver driver = new ChromeDriver();
 	      driver.manage().window().maximize();        // Maximise the window
@@ -31,8 +30,6 @@ public class RigthClick {
 	      //  WebElement book = driver.findElement(By.xpath("//a[contains(.,'Books')]"));  // Book Rigth click
 	        WebElement book = driver.findElement(By.xpath("//a[contains(.,'Maps')]/parent::div[@class='hdtb-mitem hdtb-imb']"));
 	        a.contextClick(book).build().perform();
-	       
-	}		
+	}
+
 }
-
-

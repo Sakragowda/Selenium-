@@ -6,10 +6,9 @@ import java.awt.Robot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class RoboClassKeyAction {
+public class KeyBoardAction {
 
 	public static void main(String[] args) throws AWTException {
-		
 		// TODO Auto-generated method stub
 	      System.setProperty("webdriver.chrome.driver",".\\software\\chromedriver.exe" );
 	      WebDriver driver = new ChromeDriver();
@@ -17,10 +16,9 @@ public class RoboClassKeyAction {
 	      Robot r = new Robot();
 	      r.keyPress(java.awt.event.KeyEvent.VK_CONTROL);
 	      r.keyPress(java.awt.event.KeyEvent.VK_T);
-	   //   r.keyPress(java.awt.event.KeyEvent.VK_CONTROL);
-	   //   r.keyPress(java.awt.event.KeyEvent.VK_T);	    
-          
-	      
+	      r.keyRelease(java.awt.event.KeyEvent.VK_CONTROL);
+	      r.keyRelease(java.awt.event.KeyEvent.VK_T);	 
+	        
 	}
 
 }
