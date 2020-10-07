@@ -2,11 +2,9 @@ package org.qsp.Selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 
-public class Guru99DoubleClick {
+public class FaceBookRadioButton {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
@@ -14,14 +12,13 @@ public class Guru99DoubleClick {
 	      System.setProperty("webdriver.chrome.driver",".\\software\\chromedriver.exe" );
 	      WebDriver driver = new ChromeDriver();
 	      driver.manage().window().maximize();        // Maximise the window
-	      driver.get("http://demo.guru99.com/test/simple_context_menu.html");	// GRUR99 URL
+	      driver.get("https://www.facebook.com/");	
+	      Thread.sleep(3000);
+	      driver.findElement(By.xpath("//a[@class='_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy']")).click();
 	      Thread.sleep(2000);
-	      @SuppressWarnings("unused")
-		  WebElement rClick = driver.findElement(By.tagName("span"));
-	      Actions a = new Actions(driver);
-	      //a.contextClick(rClick).perform();
-	      WebElement dClick = driver.findElement(By.tagName("button"));
-	      a.doubleClick(dClick).perform();		
+	     // WebElement day = driver.findElement(By.id("day"));
+	    //  Select dy = new Select(day);	
+	      driver.findElement(By.xpath("//label[text()='Male']")).click();
 		
 	}
 

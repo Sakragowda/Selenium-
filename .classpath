@@ -11,6 +11,10 @@
 	<classpathentry kind="src" path="RoboClass"/>
 	<classpathentry kind="src" path="ActionsClass"/>
 	<classpathentry kind="src" path="AnonymousCLASS"/>
+	<classpathentry kind="src" path="SelectClass"/>
+	<classpathentry kind="src" path="Implisit/Explisit[Wait]"/>
+	<classpathentry kind="src" path="AssignmentQuestion"/>
+	<classpathentry kind="src" path="POP-UP"/>
 	<classpathentry kind="lib" path="jar/selenium-server-standalone-3.141.59.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
