@@ -21,7 +21,7 @@ public class HiddenPopActTimeAbout {
 	      driver.findElement(By.id("username")).sendKeys("admin");
 	      driver.findElement(By.name("pwd")).sendKeys("manager");
 	      driver.findElement(By.id("loginButton")).click();
-	      Thread.sleep(2000);
+	      driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	      driver.findElement(By.xpath("//div[@class='popup_menu_button popup_menu_button_support']")).click();;
 	      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);	
 	      
