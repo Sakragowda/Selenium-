@@ -1,5 +1,14 @@
 package org.qsp.Selenium;
 
+import java.awt.AWTException;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class BlsRingDelivery {
 
@@ -22,20 +31,8 @@ public class BlsRingDelivery {
 	    
 	    driver.findElement(By.xpath("//span[@data-displayname='next day delivery']")).click();
 	    
-	    Robot r = new Robot();
-	    
-	   int count=0; 
-	   List<WebElement> prd = driver.findElements(By.xpath("//div[@class='pr-i lazyload-bg']"));
-	   driver.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
-	   for (@SuppressWarnings("unused") WebElement prds : prd)
-	   {
-		  // driver.findElement(By.xpath("//img[@alt=\"Loading..\"]/parent::div[@id='loadmoreajaxloader']")).click();
-		   r.mouseWheel(50);
-		   Thread.sleep(1000);
-		   driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-		   count++;
-	   }
-	   System.out.println(count);
+	 
+	   //System.out.println(count);
 	   
   }
 

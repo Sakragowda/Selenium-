@@ -15,7 +15,7 @@ public class facebookELE {
 	      WebDriver driver = new ChromeDriver();
 	      driver.manage().window().maximize();
 	      driver.get("https://www.facebook.com/");
-	      Thread.sleep(200);		
+	      Thread.sleep(200);	
 	      WebElement userName = driver.findElement(By.id("email"));
 	      userName.sendKeys("sakra3196@gmail.com"); 	
 	      //WebElement Password = driver.findElement(By.id("pass"));

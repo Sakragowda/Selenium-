@@ -22,7 +22,7 @@ public class JquerSlider {
 	      
 		  Actions a = new Actions(driver);
 		  WebElement slider = driver.findElement(By.id("slider"));    //    SLIDER
-		  a.dragAndDropBy(slider, 100 , 100 ).perform(); 		
+		  a.dragAndDropBy(slider, 200 , 0 ).perform();	
 		
 	}
 

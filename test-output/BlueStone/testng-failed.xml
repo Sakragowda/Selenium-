@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BlueStone]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="BLUs10kcount(failed)">
+    <classes>
+      <class name="org.qsp.TestNGdemo.BlueStoneTNG">
+        <methods>
+          <include name="BlueStone"/>
+        </methods>
+      </class> <!-- org.qsp.TestNGdemo.BlueStoneTNG -->
+    </classes>
+  </test> <!-- BLUs10kcount(failed) -->
+</suite> <!-- Failed suite [BlueStone] -->
